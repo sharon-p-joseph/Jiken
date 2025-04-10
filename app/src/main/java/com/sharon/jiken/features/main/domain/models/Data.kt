@@ -42,3 +42,9 @@ data class Data(
     @SerializedName("demographics") var demographics: ArrayList<Demographics> = arrayListOf()
 
 )
+
+
+data class DataResponseModel(
+    var result: Boolean = false,
+    var data: Data = Data()
+)

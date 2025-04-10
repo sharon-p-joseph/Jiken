@@ -5,8 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.sharon.jiken.features.main.domain.usecase.repo.AnimeRepoUseCases
-import com.sharon.jiken.features.main.presentation.activity.state.AnimeListState
-import com.sharon.jiken.features.main.presentation.activity.state.AnimeListStatus
+import com.sharon.jiken.features.main.presentation.screens.state.AnimeListState
+import com.sharon.jiken.features.main.presentation.screens.state.AnimeListStatus
 import com.sharon.jiken.features.main.presentation.intents.AnimeListIntents
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
@@ -17,8 +17,7 @@ import kotlinx.coroutines.launch
 class AnimeViewModel @Inject constructor(private val animeRepoUseCases: AnimeRepoUseCases) :
     ViewModel() {
     private val _state = MutableLiveData(AnimeListState())
-    val state:LiveData<AnimeListState> = _state
-
+    val state: LiveData<AnimeListState> = _state
 
 
     fun onIntent(intent: AnimeListIntents) {
