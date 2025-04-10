@@ -23,6 +23,7 @@ fun AnimeListScreen(
             )
         },
     ) { innerPadding ->
+
         AnimeList(modifier = Modifier.padding(innerPadding), onAnimeClick = {
             onAnimeClick(it)
         })
