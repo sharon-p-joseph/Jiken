@@ -71,6 +71,7 @@ dependencies {
     implementation(libs.coil.network.okhttp)
 
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation("io.github.ilyapavlovskii:youtubeplayer-compose:2024.02.25")
 
 
     implementation(libs.androidx.material3)

@@ -5,8 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.sharon.jiken.features.main.domain.usecase.repo.AnimeRepoUseCases
-import com.sharon.jiken.features.main.presentation.screens.state.AnimeListState
-import com.sharon.jiken.features.main.presentation.screens.state.AnimeListStatus
+import com.sharon.jiken.features.main.presentation.state.AnimeListState
+import com.sharon.jiken.features.main.presentation.state.AnimeListStatus
 import com.sharon.jiken.features.main.presentation.intents.AnimeListIntents
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject

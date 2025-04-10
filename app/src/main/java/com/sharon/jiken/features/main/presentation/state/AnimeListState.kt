@@ -1,4 +1,4 @@
-package com.sharon.jiken.features.main.presentation.screens.state
+package com.sharon.jiken.features.main.presentation.state
 
 import com.sharon.jiken.features.main.domain.models.Data
 
