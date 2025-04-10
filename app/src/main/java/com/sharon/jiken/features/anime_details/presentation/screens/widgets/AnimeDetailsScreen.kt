@@ -33,7 +33,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import androidx.navigation.compose.rememberNavController
 import com.sharon.jiken.features.anime_details.presentation.AnimeDetailsViewModel
 import com.sharon.jiken.features.anime_details.presentation.intents.AnimeDetailsIntent
 import com.sharon.jiken.features.anime_details.presentation.screens.state.AnimeDetailsStatus

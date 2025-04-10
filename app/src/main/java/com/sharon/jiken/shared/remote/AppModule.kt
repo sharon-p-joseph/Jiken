@@ -1,4 +1,4 @@
-package com.sharon.jiken.features.main.data.di
+package com.sharon.jiken.shared.remote
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -7,7 +7,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-
 import kotlinx.coroutines.Dispatchers
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
