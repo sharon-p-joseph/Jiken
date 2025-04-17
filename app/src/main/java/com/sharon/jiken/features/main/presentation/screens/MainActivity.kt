@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.runtime.saveable.rememberSaveableStateHolder
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -14,6 +15,7 @@ import androidx.navigation.navArgument
 import com.sharon.jiken.features.anime_details.presentation.screens.widgets.AnimeDetailsScreen
 import com.sharon.jiken.ui.theme.JikenTheme
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.serialization.Serializable
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -27,11 +29,11 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
 
                 NavHost(
-                    navController = navController, startDestination = "anime_list"
+                    navController = navController, startDestination = AnimeList
                 ) {
-                    composable("anime_list") {
+                    composable<AnimeList> {
                         AnimeListScreen { animeId ->
-                            navController.navigate("anime_details/$animeId")
+                            navController.navigate(AnimeDetails(animeId))
                         }
                     }
 
@@ -48,6 +50,15 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+
+
+
+@Serializable
+object AnimeList
+
+@Serializable
+class AnimeDetails(val id: Int)
 
 
 
