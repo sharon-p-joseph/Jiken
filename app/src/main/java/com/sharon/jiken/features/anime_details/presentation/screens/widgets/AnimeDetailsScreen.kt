@@ -1,5 +1,6 @@
 package com.sharon.jiken.features.anime_details.presentation.screens.widgets
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -37,6 +38,7 @@ import com.sharon.jiken.features.anime_details.presentation.AnimeDetailsViewMode
 import com.sharon.jiken.features.anime_details.presentation.intents.AnimeDetailsIntent
 import com.sharon.jiken.features.anime_details.presentation.screens.state.AnimeDetailsStatus
 import com.sharon.jiken.features.main.presentation.screens.widgets.RoundedCornerImage
+
 
 
 @OptIn(ExperimentalMaterial3Api::class)

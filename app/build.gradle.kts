@@ -71,7 +71,7 @@ dependencies {
     implementation(libs.coil.network.okhttp)
 
     implementation(libs.androidx.lifecycle.viewmodel.compose)
-    implementation("io.github.ilyapavlovskii:youtubeplayer-compose:2024.02.25")
+    implementation(libs.youtubeplayer.compose)
 
 
     implementation(libs.androidx.material3)
@@ -79,8 +79,10 @@ dependencies {
     implementation(libs.retrofit)
     // Hilt Core
     implementation(libs.hilt.android)
+    implementation(libs.androidx.navigation.compose)
     kapt(libs.hilt.compiler)
     implementation(libs.androidx.hilt.navigation.compose.v120)
+    implementation(libs.kotlinx.serialization.json)
 
 
 // Hilt Navigation Compose
