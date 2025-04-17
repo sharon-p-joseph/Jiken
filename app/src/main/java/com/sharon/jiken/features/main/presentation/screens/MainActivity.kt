@@ -38,22 +38,21 @@ class MainActivity : ComponentActivity() {
                     composable<AnimeDetailsRoute>
 
                     { backStackEntry ->
-                        val animeId: AnimeDetailsRoute = backStackEntry.toRoute()
-
-                        AnimeDetailsScreen(animeId = animeId.id, navController = navController)
+                        val animeId = backStackEntry.toRoute<AnimeDetailsRoute>().id
+                        AnimeDetailsScreen(animeId = animeId, navController = navController)
                     }
                 }
             }
         }
     }
+
+
+    @Serializable
+    object AnimeListRoute
+
+    @Serializable
+    class AnimeDetailsRoute(val id: Int)
 }
-
-
-@Serializable
-object AnimeListRoute
-
-@Serializable
-class AnimeDetailsRoute(val id: Int)
 
 
 
